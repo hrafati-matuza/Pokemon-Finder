@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title id="title">Pokemon Finder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 >Pokemon Finder</h1>
+    <section id  = "pokemonSearchMain">
+      <hr>
+      <form>
+        <label for = "search-input">Enter Pokemon Name or ID : 
+          <input id="search-input" type="text" placeholder="Search Pokemon">
+        </label>
+        <button id = "search-button" type="submit">Search</button>
+      </form>
+      <hr>
+      <section id = "pokemonDisplay">
+
+        <span class= "text" id="pokemon-name"></span>
+        <span class= "text" id="pokemon-id"></span>
+        <span class= "text" id="weight"></span>
+        <span class= "text" id="height"></span>
+        <figure id="img-container">
+          <img id="sprite" src="" alt="Pokemon Sprite" required>
+        </figure>
+        <div id="types"></div>
+        <table>
+          <tr >
+            <td>Base</td>
+            <td>Stats</td>
+          </tr>
+          <hr>
+          <tr>
+            <td>HP</td>
+            <td id="hp"></td>
+          </tr>
+          <tr>
+            <td>Attack</td>
+            <td id = "attack"></td>
+          </tr>
+          <tr>
+            <td>Defense</td>
+            <td id="defense"></td>
+          </tr>
+          <tr>
+            <td>Special Attack</td>
+            <td id = "special-attack"></td>
+          </tr>
+          <tr>
+            <td>Special Defense</td>
+            <td id="special-defense"></td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td id = "speed"></td>
+          </tr>
+          </table>
+        <hr>
+      </sections>
+      <hr>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
